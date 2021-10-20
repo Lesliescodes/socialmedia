@@ -1,6 +1,6 @@
 const { Thoughts, User } = require('../models');
 
-const thoughtControllers = 
+const thoughtsControllers = 
 {
     addThought({params, body}, res) {
         console.log (params);
@@ -35,7 +35,17 @@ const thoughtControllers =
         }  )
                  
         .catch(err => res.json(err));
-    }   
- };
+    },
+
+    deleteThought({params}, res,) {
+        Thoughts.findAndDelete({ _id: params.id})
+        .then(thoughtdata => {
+            if (!thoughtdata) {
+            res.status(404).json({ message: 'Empty thoughts.'});
+            }
+        })
+    }
+
+ }
 
  module.exports = thoughtControllers;
