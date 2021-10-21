@@ -1,11 +1,26 @@
+const { Thoughts, User } = require('../models');
+// const router = require('express').Router();
+const {
+    getUsers,
+    createUser,
+    updateUser,
+    deleteUser,
+    getSingleUser,
+},
 const { Router } = require('express');
 const { Thoughts, User } = require('../models');
 
-const {
-    getAllUser,
-    getSingleUser
-    = require('../../controllers/User-controllers');
-}
+require.controls ('../../controllers/User-controllers'),
 
-.route('/')
- 
+router
+    .route('/')
+    .get(getUsers)
+    .post(createUser);
+
+router
+    .route('/:id')
+    .get(getSingleUser)
+    .put(updateUser)
+    .delete(deleteUser);
+
+module.exports = router;

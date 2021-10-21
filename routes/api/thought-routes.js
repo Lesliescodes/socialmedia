@@ -1,4 +1,5 @@
-const router = require('express').Router();
+const { Thoughts, User } = require('../models');
+// const router = require('express').Router();
 
 const{
 

@@ -1,4 +1,5 @@
-const express = require('express');
+const { Thoughts, User } = require('../socialmedia/models')
+// const express = require('express');
 const db = require('./config/connection');
 const routes = require('./routes');
 
