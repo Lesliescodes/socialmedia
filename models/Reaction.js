@@ -8,8 +8,21 @@ reactionId: {
 },
 reactionBody:{
     
+},
+username:{
+
+},
+createAt:{
+
 }
 
-})
+},
+{
+    toJSON:{
+        getters: true
+    },
+    id: false
+}
+)
 
 module.exports =  reactionSchema;

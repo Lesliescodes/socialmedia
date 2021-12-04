@@ -18,3 +18,4 @@ router
 router
 .route ('/:id')
 .delete (deleteThought)
+.put (updateThought)

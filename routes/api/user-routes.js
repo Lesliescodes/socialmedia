@@ -1,12 +1,12 @@
-const { Thoughts, User } = require('../models');
-// const router = require('express').Router();
-const {
+const{ Thoughts, User} = require('../models'),
+  const{
     getUsers,
     createUser,
     updateUser,
     deleteUser,
     getSingleUser,
 },
+
 const { Router } = require('express');
 const { Thoughts, User } = require('../models');
 
