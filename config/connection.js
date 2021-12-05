@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-mongoose.set('debug', true);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/socialmedia', {
-  useFindAndModify: false,
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
 });
 
-module.exports = mongoose.connection
+module.exports = mongoose.connection;

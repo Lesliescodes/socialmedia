@@ -1,5 +1,4 @@
-const { Thoughts, User } = require('../socialmedia/models')
-// const express = require('express');
+const express = require('express');
 const db = require('./config/connection');
 const routes = require('./routes');
 
@@ -11,7 +10,7 @@ app.use(express.json());
 app.use(routes);
 
 db.once('open', ()=>{
-    app.listen(PORT, () => {
-        console.log(`App running on port ${PORT}!`);
-      }); 
+    app.listen(PORT, 
+        console.log(`App running on port ${PORT}!`)
+      ); 
 })
