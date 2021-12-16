@@ -6,6 +6,8 @@ I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 ## Screenshot
 
+![thoughts](https://user-images.githubusercontent.com/84750526/146332267-df82e481-88c6-4cbb-98c3-b3c32f0ba145.jpg)
+![Screenshot 2021-12-16 010032](https://user-images.githubusercontent.com/84750526/146332607-e6ad09f8-a129-409c-8947-e7a60fbb8bd1.jpg)
 
 ## Tech
 - MongoDB
